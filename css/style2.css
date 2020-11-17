@@ -1,0 +1,12 @@
+h1, h3, h4, h5{
+    color: orangered;
+    align-content: center;
+    text-align: center;
+}
+body{
+    background-color: blue;
+}
+p{
+    text-align: center;
+    
+}

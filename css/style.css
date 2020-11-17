@@ -1,5 +1,6 @@
 h1{
-    color: orange;
+    color: orangered;
+    text-align: center;
 }
 input{
     margin: auto;
@@ -11,20 +12,38 @@ label{
     margin-right: 30px;
     color: blue;
 }
+body{
+  background-image: url(/img/logo_fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+button {
+	font: 700 1em Tahoma, Arial, Verdana, sans-serif;
+  color: blue;
+  background-color:white;
+	border: 1px solid #0074a5;
+	border-top: 1px solid #004370;
+	border-left: 1px solid #004370;
+	cursor: pointer;
+}
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+    width: fit-content;
   }
   .col-1 {
     float: left;
     width: 25%;
     margin-top: 6px;
   }
-  .col-2 {
+  .col2 {
     float: left;
     width: 75%;
     margin-top: 6px;
+  }
+  .sex{
+    margin-left: 12%;
   }
   .row:after {
     content: "";

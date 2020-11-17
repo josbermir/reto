@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Formulario Inscripcion</title>
 </head>
-
+<script src="js/javascrpt.js"></script>
 <body>
-    <h1>Welcome to New York</h1>
+    <h1>Welcome to New York Knicks</h1>
     <div class="container">
-        <form id="form">
+        <form id="form" name="form" onsubmit="return validation()" action="index2.html">
             <div class="row">
                 <div class="col-1">
                     <label for="Name">Name</label>
@@ -32,7 +32,7 @@
                     <label for="Name">E-Mail</label>
                 </div>
                 <div class="col2">
-                    <input type="e-mail" id="e-mail" name="E-mail" placeholder="e-mail"><br>
+                    <input type="e-mail" id="e-mail" name="Email" placeholder="name@example.com"><br>
                 </div>
             </div>
             <div class="row">
@@ -40,7 +40,7 @@
                     <label for="Name">Phone number</label>
                 </div>
                 <div class="col2">
-                    <input type="number" id="phone" name="Phone number" placeholder="999999999"><br>
+                    <input type="number" id="phone" name="Phonenumber" placeholder="999999999"><br>
                 </div>
             </div>
             <div class="row">
@@ -53,18 +53,45 @@
             </div>
             <div class="row">
                 <div class="col-1">
-            <label for="Name">Birthdate</label>
-            <input type="date" name="Birthdate"><br>
-            <label for="Name">Sex:</label>
-            <select id="sex" name="sex">
-                <option value="male">male</option>
-                <option value="ca">female</option>
-                <option value="usa">other</option>
-            </select><br>
-            <label for="Name">Country</label>
-            <input type="text" id="country" name="Country" placeholder="Country"><br>
-            <label for="Name">City</label>
-            <input type="text" id="City" name="City" placeholder="City"><br>
+                    <label for="Name">Birthdate</label>
+                </div>
+                <div class="col2">
+                    <input type="date" name="Birthdate"><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="Name">Sex:</label>
+                </div>
+                <div class="col2">
+                    <select class="sex" name="sex">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                        <option value="other">other</option>
+                    </select><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="Name">Country</label>
+                </div>
+                <div class="col2">
+                    <input type="text" id="country" name="Country" placeholder="Country"><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="Name">City</label>
+                </div>
+                <div class="col2">
+                    <input type="text" id="city" name="City" placeholder="City"><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                <button id="submit" type="submit">Shoot<img src="/img/icono_boton.jpg" alt="x" /></button>
+            </div>
+        </div>
 
 
         </form>
